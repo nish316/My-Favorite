@@ -31,30 +31,3 @@ li a {
 li a:hover {
   background-color: #111;
 }
-
-.button {
-  background-color : aquamarine;
-}
-
-html {
-  scroll-behavior : smooth;
-}
-
-img {
-  height : 300px;
-  width : 300px;
-}
-
-.hoo {
-  height : 300px;
-  width : 400px;
-}
-
-.mc {
-  width : 500px;
-}
-
-.toa {
-  height : 500px;
-  width : 500px;
-}
