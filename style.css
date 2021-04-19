@@ -40,9 +40,8 @@ html {
   scroll-behavior : smooth;
 }
 
-img {
-  height : 300px;
-  width : 300px;
+.rr {
+  width : 200px
 }
 
 .hoo {
@@ -57,4 +56,13 @@ img {
 .toa {
   height : 500px;
   width : 500px;
+}
+
+.jkr {
+  height : 200px;
+  width :400px;
+}
+
+img:hover {
+  transform: scale(0.9);
 }
