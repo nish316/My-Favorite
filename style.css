@@ -1,60 +1,73 @@
-.menu {
-    list-style: none;
-    font-family: 'Oswald', sans-serif;
-    float: right;
-    align-self: stretch
-    top: 10px;
-    right: 30px;
-    cursor: pointer;
-    color: purple;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
-
-.button {
-  background-color : aquamarine;
-}
-
 html {
-  scroll-behavior : smooth;
+  scroll-behavior: smooth;
+ }
+#map iframe
+{
+    width: 50%;
+    float: left;
+    padding-top: 5px;
 }
 
-img {
-  height : 300px;
-  width : 300px;
+.contact_1 h3
+{
+    display: inline;
+}
+.contact_1 a
+{
+    text-shadow: none;
 }
 
-.hoo {
-  height : 300px;
-  width : 400px;
+#footer{
+height: 20px;
+background-color:white;
+}
+ 
+input
+{
+    background: grey
 }
 
-.mc {
-  width : 500px;
+.announcement{
+background-color:#337ab7;
+width: 100%;
+height: 30px;
 }
 
-.toa {
-  height : 500px;
-  width : 500px;
+#marqueeStyle{
+  width:100%;
+  direction:right;
+  height:100px;
+  color: beige;
+  font-size:120%;
+}
+
+#video{
+  width:100%;
+  height:500px;
+  border: none;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.travel_mainDiv
+{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  border: 1px solid #c7c7c7;
+}
+
+.travel_mainDiv img
+{
+  width: 100%;
+  height:300px;
+} 
+
+.travel_mainDiv hr
+{
+    width: 100%; 
 }
