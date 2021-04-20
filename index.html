@@ -1,28 +1,152 @@
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Reading</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
 
-</head>
+        <title>Project 68</title>
 
-<body>
+    </head>
 
-    <ul class="menu">
-        <li class="links"><a href="#about">About</a></li>
-        <li class="links"><a href="#hobbies">My Hobbies</a></li>
-        <li class="links"><a href="#work">My Work</a></li>
-        <li class="links"><a href="#inspiration">My Inspiration</a></li>
-        <li class="links"><a href="#contact">Contact</a></li>
-    </ul>
-<img src = "data:image/jpeg;base64,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">
-    <section id="about">
-        <div class="parallax-inner">
-            <h1> About </h1>
-            <p> My hobby is reading. My favorite kinds of books are books about mythology. They help me learn more about how and what people believe in. Reading helps me calm myself after a tiring day and it makes me cheerful. </p>
+    <body>
+        <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">The International School Bangalore</a>
         </div>
 
-    </section>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#campus_life">Campus Life</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#new">What's New</a></li>
+            <li><a href="#alumni">Alumni</a></li>
+            <li><a href="#contactUs">Contact Us</a></li>
+          </ul>
+        </div>
+
+        </nav>
+
+        <div class="announcement">
+      <marquee bgcolor= "blue" id="marqueeStyle" onmouseover="this.stop();" onmouseout="this.start();">
+    Check out our website at tisb.org!
+      </marquee>
+    </div>
+
+    <iframe id="video" src="https://www.youtube.com/watch?v=KPfLJegHvrE"></iframe>
+
+
+    <div class="container">
+
+      <div class="page-header" id="campus_life">
+            <h2>Campus Life</h2>
+
+      <div class="row">
+        <div  class="travel_mainDiv"> 
+          <img class="img-responsive"  src="https://www.tisb.org/userfiles/isbmvc/Images/headers/06-admissions/Picture1.jpg">
+          <h4 class="text-capitalize"><kbd>Auditorium</kbd></h4>
+          <hr >
+
+        </div>
+        <div  class="travel_mainDiv"> 
+          <img class="img-responsive"  src="https://www.tisb.org/userfiles/isbmvc/Images/headers/06-admissions/_SJP8144.jpg">
+          <h4 class="text-capitalize"><kbd>Cafeteria</kbd></h4>
+          <hr >
+
+        </div>
+        <div  class="travel_mainDiv"> 
+          <img class="img-responsive"  src="https://www.tisb.org/userfiles/isbmvc/Images/headers/06-admissions/_SJP8144.jpg">
+          <h4 class="text-capitalize"><kbd>Swimming Pool</kbd></h4>
+          <hr>
+
+        </div>
+      </div>
+    </div>
+
+       <div class="page-header" id="achievements">
+            <h2 class="text-capitalize">School Achievements</h2>
+      </div>
+
+    <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement1" >
+        Sports Day <i class="fa fa-sort-desc" ></i>
+      </div>
+
+      <div id="school_achievement1" class="collapse">
+
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+                <img src="https://farm8.static.flickr.com/7833/46562794234_91ff4c9f7d_c.jpg" class="img-responsive img-thumbnail"> 
+          </div>
+
+      </div>
+
+      <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement2" >
+        Charity Events<i class="fa fa-sort-desc" ></i>
+      </div>
+
+      <div id="school_achievement2" class="collapse">
+
+       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+            <img src="https://farm8.static.flickr.com/7868/46371370315_e408f3d656_c.jpg" class="img-responsive img-thumbnail" >
+        </div>
+      </div>
+
+
+
+      <div class="bg-primary  movie_head" data-toggle="collapse" data-target="#school_achievement3" >
+        Model United Nations <i class="fa fa-sort-desc" ></i>
+      </div>
+
+      <div id="school_achievement3" class="collapse">
+
+         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+            <img src="https://farm66.static.flickr.com/65535/48573037562_4c1bea84ca_c.jpg" class="img-responsive img-thumbnail" >
+        </div>
+
+      </div>
+ </div>
+<br>
+    <section>    
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="new">
+      <h2 class="text-capitalize ">What's New</h2>
+  </div>
+
+  <ul class="list-group">
+
+    <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li" >
+      <h4>THE AAJIVAN LECTURE SERIES</h4>
+      <img src="C:/Users/NishkaKomanduri/Pictures/Screenshots/als.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12" >
+      <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12" >
+          This is a newly established lecture series that will run annually beginning in August 2019 with lectures being held once a month.  The lectures are open to students in Grades 9, 10, 11 and 12 and will take place during the school day, lasting an hour including a question and answer session. Lectures will be given by a wide range of thought leaders, including alumni and parents, covering a variety of topics to further enhance and educate our students in the world outside of TISB.</p>
+     </li>
+
+    <li class="list-group-item list-group-item-warning col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li"  >
+     <h4>Creative Arts</h4>
+     <img src="https://www.flickr.com/photos/tisbangalore/49628815163/in/album-72157713392261557/" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12" >
+     <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12" >
+        There are many opportunities for students to excel is Art, Drama and Music throughout their time at TISB, whether as a hobby taking part in one of the many clubs on offer, or more seriously at IGCSE and IB levels. 
+        </p>
+    </li>
+</ul>
+        </section>
+        <h2> Contact Us </h2>
+        <section id = "contactUs">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.256524667614!2d77.74791861389505!3d12.891219690908672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0d56b869f2cd%3A0xe118aefbde9093b3!2sThe%20International%20School%20Bangalore!5e0!3m2!1sen!2sin!4v1618841388861!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </section>
     </body>
-</html>
+    </html>
